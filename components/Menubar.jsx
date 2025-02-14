@@ -2,7 +2,6 @@
 
 import { Button, Divider } from "@heroui/react";
 import { Input } from "@heroui/input";
-import { SearchIcon } from "@/components/icons";
 import { Image } from "@heroui/react";
 import { Avatar } from "@heroui/react";
 import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";

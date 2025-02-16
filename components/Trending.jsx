@@ -1,9 +1,10 @@
 "use client";
 
-import { Button } from "@heroui/react";
 import { Image } from "@heroui/react";
 import { Card, CardHeader } from "@heroui/card";
 import { tabItems } from "./ArrayList";
+import Open7tabButton from "./Open7tabButton";
+import AddDescButton from "./AddDescButton";
 
 export default function Trending() {
   return (
@@ -25,26 +26,14 @@ export default function Trending() {
 
           <div className="">
             <div className="flex">
-              <Button
-                variant="flat"
-                className="w-16 h-6 text-[10px] font-bold"
-                size="sm"
-              >
-                Open 7 tabs
-              </Button>
-              <Button
-                className="text-[10px] font-bold ml-1 w-[10px] bg-white border-small h-6"
-                variant="bordered"
-                size="sm"
-              >
-                Add desc
-              </Button>
+              <Open7tabButton />
+              <AddDescButton />
             </div>
           </div>
           <div className="flex-col mt-1 items-start w-80">
             {tabItems.map((item, index) => (
               <div
-                key={item.key}
+                key={index}
                 className="flex text-left justify-start gap-2 mt-2"
               >
                 <div>

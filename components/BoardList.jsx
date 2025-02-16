@@ -12,6 +12,6 @@ export default function BoardList() {
       <Personal />
       <Trending />
       <MyFavorites />
-    </div>
+    </div>  
   );
 }

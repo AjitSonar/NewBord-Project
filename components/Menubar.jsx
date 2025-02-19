@@ -2,7 +2,7 @@
 
 import NavbarMenu from "./NavbarMenu";
 import BoardNavbar from "./BoardNavbar";
-import BoardList from "./BoardList";
+import BoardCardLists from "./BoardCardLists";
 
 export default function Menubar() {
   return (
@@ -12,7 +12,7 @@ export default function Menubar() {
       <div className="bg-slate-50 h-[720px] border-1 overflow-hidden mt-2 rounded-3xl">
         <BoardNavbar />
 
-        <BoardList />
+        <BoardCardLists />
       </div>
     </div>
   );

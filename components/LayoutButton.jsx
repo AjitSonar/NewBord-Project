@@ -3,7 +3,7 @@
 import { Button } from "@heroui/react";
 import { Image } from "@heroui/react";
 
-export default function LayoutButton() {
+export default function LayoutButton(props) {
   return (
     <div className="">
       <Button
@@ -17,9 +17,9 @@ export default function LayoutButton() {
         <Image
           className="rounded-none"
           alt="HeroUI hero Image"
-          src="/assets/layout-012.png"
-          width={16}
-          height={16}
+          src={props.src}
+          width={props.width}
+          height={props.height}
         />
       </Button>
     </div>

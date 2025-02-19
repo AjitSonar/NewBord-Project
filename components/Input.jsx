@@ -3,11 +3,11 @@
 import { Input } from "@heroui/input";
 import { Image } from "@heroui/react";
 
-export default function SearchInput() {
+export default function SearchInput(props) {
   return (
     <div className="w-[430px]">
       <Input
-        placeholder="Search"
+        placeholder={props.placeholder}
         type="text"
         size="sm"
         className="placeholder:text-[7px]"
@@ -15,9 +15,9 @@ export default function SearchInput() {
           <Image
             className="rounded-none"
             alt="HeroUI hero Image"
-            src="/assets/search-013.png"
-            width={15}
-            height={15}
+            src={props.startSrc}
+            width={props.startWidth}
+            height={props.startHeight}
           />
         }
         endContent={
@@ -25,11 +25,11 @@ export default function SearchInput() {
             <Image
               className="mt-1 rounded-none"
               alt="HeroUI hero Image"
-              src="/assets/command@3x.png"
-              width={16}
-              height={12}
+              src={props.endSrc}
+              width={props.endWidth}
+              height={props.endHeight}
             />
-            <p className="mt-0.5 text-xs text-neutral-500 px-1">K</p>
+            <p className="mt-0.5 text-xs text-neutral-500 px-1">{props.endImgContent}</p>
           </div>
         }
       />

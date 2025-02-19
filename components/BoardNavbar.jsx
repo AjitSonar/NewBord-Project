@@ -1,32 +1,32 @@
 "use client";
 
 import { Divider } from "@heroui/react";
-import Logo from "./Logo";
-import DownArrow from "./DownArrow";
+import Icon from "./Icon";
 import LayoutButton from "./LayoutButton";
-import FilterButton from "./FilterButton";
 import ShareButton from "./ShareButton";
 
 export default function BoardNavbar() {
   return (
     <div className="flex mt-2 mb-2 justify-between">
       <div className="flex m-3">
-        <Logo />
+        <Icon src="/assets/anger-symbol2.png" height={23} width={23} />
 
-        <h1 className="ml-4 mt-1.5 text-xl font-bold"> Website Design </h1>
+        <h1 className="ml-1 mt-1.5 text-xl font-bold"> Website Design </h1>
 
-        <DownArrow />
+        <div className="mt-1 ml-1.5">
+          <Icon src="/assets/arrow-down (3).png" width={16} height={16} />
+        </div>
       </div>
 
       <div className="-ml-5">
         <div className="flex gap-2 mt-3 pr-5 items-center">
           <Divider orientation="vertical" className=" h-5 my-2" />
 
-          <LayoutButton />
+          <LayoutButton src="/assets/layout-012.png" width="16" height="16" />
 
-          <FilterButton />
+          <LayoutButton src="/assets/more-button3.png" width="16" height="16" />
 
-          <ShareButton />
+          <ShareButton content="Share" />
         </div>
       </div>
     </div>

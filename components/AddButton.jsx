@@ -3,7 +3,7 @@
 import { Button } from "@heroui/react";
 import { Image } from "@heroui/react";
 
-export default function AddButton() {
+export default function AddButton(props) {
   return (
     <div className="">
       <Button
@@ -13,13 +13,15 @@ export default function AddButton() {
           <Image
             className="ml-1"
             alt="HeroUI hero Image"
-            src="/assets/add-icon.webp"
-            width={17}
-            height={17}
+            src={props.src}
+            width={props.width}
+            height={props.height}
           />
         }
       >
-        <p className="ml-1 text-sm text-neutral-500 font-medium">New</p>
+        <p className="ml-1 text-sm text-neutral-500 font-medium">
+          {props.content}
+        </p>
       </Button>
     </div>
   );

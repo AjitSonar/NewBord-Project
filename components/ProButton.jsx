@@ -2,17 +2,17 @@
 
 import { Button } from "@heroui/react";
 
-export default function UpgradeToProButton() {
+export default function ProButton(props) {
   return (
     <div className="">
       <Button
-        className="w-24 h-7 ml-2 text-[10px]"
+        className={props.className}
         radius="sm"
         color="primary"
         variant="solid"
         size="sm"
       >
-        Upgrade to Pro
+        {props.content}
       </Button>
     </div>
   );

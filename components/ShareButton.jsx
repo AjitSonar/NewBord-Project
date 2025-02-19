@@ -2,7 +2,7 @@
 
 import { Button } from "@heroui/react";
 
-export default function ShareButton() {
+export default function ShareButton(props) {
   return (
     <div className="">
       <Button
@@ -10,7 +10,7 @@ export default function ShareButton() {
         className=" bg-white border-small h-7"
         size="sm"
       >
-        <p className="text-black font-bold">Share </p>
+        <p className="text-black font-bold">{props.content} </p>
       </Button>
     </div>
   );

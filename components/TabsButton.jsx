@@ -3,7 +3,7 @@
 import { Button } from "@heroui/react";
 import { Image } from "@heroui/react";
 
-export default function TabsButton() {
+export default function TabsButton(props) {
   return (
     <div className="">
       <Button
@@ -14,9 +14,9 @@ export default function TabsButton() {
             <Image
               className="rounded-none"
               alt="HeroUI hero Image"
-              src="/assets/change-3.png"
-              width={15}
-              height={15}
+              src={props.startImg}
+              width={props.startWidth}
+              height={props.startHeight}
             />
           </div>
         }
@@ -24,9 +24,9 @@ export default function TabsButton() {
           <Image
             className="rounded-none"
             alt="HeroUI hero Image"
-            src="/assets/downArray.svg"
-            width={15}
-            height={15}
+            src={props.endImg}
+            width={props.endWidth}
+            height={props.endHeight}
           />
         }
         variant="bordered"

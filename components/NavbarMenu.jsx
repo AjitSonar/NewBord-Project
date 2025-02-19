@@ -9,36 +9,43 @@ import OpenButton from "./OpenButton";
 
 export default function NavbarMenu() {
   return (
-    <div className="flex justify-between bg-white h-10">
+    <div className="hidden lg:flex justify-between bg-white h-10">
       <div className="mt-1 flex">
-        <SearchInput
-          placeholder="Search"
-          startSrc="/assets/search-013.png"
-          endSrc="/assets/command@3x.png"
-          startHeight={15}
-          startWidth={15}
-          endHeight={12}
-          endWidth={16}
-          endImgContent="K"
-        />
+        <div>
+          <SearchInput
+            placeholder="Search"
+            startSrc="/assets/search-013.png"
+            endSrc="/assets/command@3x.png"
+            startHeight={15}
+            startWidth={15}
+            endHeight={12}
+            endWidth={16}
+            endImgContent="K"
+          />
+        </div>
 
-        <TabsButton
-          startImg="/assets/change-3.png"
-          endImg="/assets/downArray.svg"
-          startHeight={15}
-          startWidth={15}
-          endHeight={15}
-          endWidth={15}
-        />
+        <div>
+          <TabsButton
+            startImg="/assets/change-3.png"
+            endImg="/assets/downArray.svg"
+            startHeight={15}
+            startWidth={15}
+            endHeight={15}
+            endWidth={15}
+          />
+        </div>
       </div>
 
       <div className="flex pr-4">
-        <AddButton
-          src="/assets/add-icon.webp"
-          width="17"
-          height="17"
-          content="New"
-        />
+        
+        <div>
+          <AddButton
+            src="/assets/add-icon.webp"
+            width="17"
+            height="17"
+            content="New"
+          />
+        </div>
 
         <Divider orientation="vertical" className=" h-5 my-2" />
 

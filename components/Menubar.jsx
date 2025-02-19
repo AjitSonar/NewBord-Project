@@ -6,10 +6,10 @@ import BoardCardLists from "./BoardCardLists";
 
 export default function Menubar() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center">
       <NavbarMenu />
 
-      <div className="bg-slate-50 h-[720px] border-1 overflow-hidden mt-2 rounded-3xl">
+      <div className="bg-slate-50 h-[720px] justify-center border-1 lg:overflow-hidden overflow-y-auto  mt-2 rounded-3xl">
         <BoardNavbar />
 
         <BoardCardLists />

@@ -9,11 +9,11 @@ import { cardData } from "./ArrayList";
 export default function BoardCardLists() {
   return (
     <div className="flex px-2 flex-wrap">
-      <div className="flex flex-wrap">
+      <div className="flex w-full justify-center lg:justify-start flex-wrap">
         {cardData.map((card, index) => (
           <Card
             key={index}
-            className="shadow-none border-1 max-w-[320px] m-1 flex-col"
+            className="shadow-none border-1 lg:w-1/3 max-w-[320px] m-1 flex-col"
           >
             <CardHeader className="flex flex-col items-start">
               <div className="flex">

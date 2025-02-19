@@ -18,7 +18,7 @@ export default function BoardNavbar() {
         </div>
       </div>
 
-      <div className="-ml-5">
+      <div className="-ml-5 hidden sm:block ">
         <div className="flex gap-2 mt-3 pr-5 items-center">
           <Divider orientation="vertical" className=" h-5 my-2" />
 

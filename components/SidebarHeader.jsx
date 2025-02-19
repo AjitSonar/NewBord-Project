@@ -17,23 +17,32 @@ export default function SidebarHeader() {
       </div>
 
       {/* AH Component */}
-
-      <FoldersSidebar
-        startIconSrc="/assets/briefcase3.png"
-        StartIconWidth={18}
-        StartIconHeight={18}
-        startIconClass="rounded-none mt-1"
-        content="Atomic House"
-        contentClass="font-bold mt-2 text-xs"
-        endIconSrc="/assets/arrow-down (3).png"
-        endIconWidth={16}
-        endIconHeight={16}
-        endIconClass="ml-16 font-normal mt-0.5"
-      />
+      <div className="relative">
+        <FoldersSidebar
+          startIconSrc="/assets/briefcase3.png"
+          StartIconWidth={18}
+          StartIconHeight={18}
+          startIconClass="rounded-none mt-1"
+          content="Atomic House"
+          contentClass="font-bold mt-2 text-xs"
+          endIconSrc=" "
+          endIconWidth={0}
+          endIconHeight={0}
+          endIconClass=" "
+        />
+        <div className="absolute top-0.5 left-[172px] rounded-full w-5 h-5">
+          <Icon
+            src="/assets/arrow-down (3).png"
+            class="ml-2 rounded-none"
+            width={16}
+            height={16}
+          />
+        </div>
+      </div>
 
       {/* Inbox Component*/}
 
-      <div className="flex h-6 mt-1.5">
+      <div className="flex relative h-6 mt-1.5">
         <FoldersSidebar
           startIconSrc="/assets/inbox.svg"
           StartIconWidth={19}
@@ -46,7 +55,7 @@ export default function SidebarHeader() {
           endIconHeight={0}
           endIconClass=" "
         />
-        <div className="bg-slate-200 ml-28 rounded-full w-5 h-5">
+        <div className="bg-slate-200 absolute top-0.5 left-44 rounded-full w-5 h-5">
           <p className="ml-1.5 text-xs mt-0.5">6</p>
         </div>
       </div>
@@ -90,7 +99,7 @@ export default function SidebarHeader() {
       {/* WebDesign Component */}
 
       <div className="flex bg-slate-100 h-9 rounded-lg -ml-3">
-        <div className="py-0.5 flex items-center justify-center">
+        <div className="py-0.5 flex relative items-center justify-center">
           <FoldersSidebar
             startIconSrc="/assets/anger-symbol3.png"
             StartIconWidth={19}
@@ -103,7 +112,7 @@ export default function SidebarHeader() {
             endIconHeight={0}
             endIconClass=" "
           />
-          <div className="bg-slate-200 mt-1 ml-14 rounded-full w-6 h-6">
+          <div className="bg-slate-200 absolute top-1.5 left-[185px] rounded-full w-6 h-6">
             <p className="ml-1 text-xs mt-1">24</p>
           </div>
         </div>
@@ -127,8 +136,8 @@ export default function SidebarHeader() {
       </div>
 
       {/* Yellow Folder Component */}
-      
-      <div className="flex h-6 mt-1.5">
+
+      <div className="flex relative h-6 mt-1.5">
         <FoldersSidebar
           startIconSrc="/assets/folder.y3.png"
           StartIconWidth={19}
@@ -141,7 +150,7 @@ export default function SidebarHeader() {
           endIconHeight={0}
           endIconClass=" "
         />
-        <div className="bg-slate-200 ml-28 mt-0.5 rounded-full w-5 h-5">
+        <div className="bg-slate-200 absolute top-0.5 left-44 rounded-full w-5 h-5">
           <p className="ml-1.5 text-xs mt-0.5">3</p>
         </div>
       </div>

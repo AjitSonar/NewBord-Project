@@ -13,7 +13,7 @@ export default function FoldersSidebar(props) {
           class={props.startIconClass}
         />
       </div>
-      <h1 className={props.contentClass}>{props.content}</h1>
+      <h1 className={props.contentClass}>{props.content}</h1> 
       <Icon
         src={props.endIconSrc}
         width={props.endIconWidth}

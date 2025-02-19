@@ -10,7 +10,7 @@ export default function Icon(props) {
         src={props.src}
         width={props.width}
         height={props.height}
-        className={props.class} 
+        className={props.class}  
         radius={props.radius}
       />
     </div>

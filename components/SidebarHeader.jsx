@@ -7,7 +7,7 @@ import FoldersSidebar from "./FoldersSidebar.jsx";
 export default function SidebarHeader() {
   return (
     <div className="flex flex-col h-full relative">
-      <div className="items-start -mt-2 -ml-2 w-52 h-10">
+      <div className="hidden lg:block items-start -mt-2 -ml-2 w-52 h-10">
         <Icon
           src="/assets/frame3.png"
           class="ml-2 rounded-none"

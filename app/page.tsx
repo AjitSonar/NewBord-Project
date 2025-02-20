@@ -3,8 +3,8 @@ import Menubar from "@/components/Menubar";
 
 export default function Home() {
   return (
-    <section className=" mx-auto flex m-1 items-center lg:items-start">
-      <div className="flex-col hidden lg:block overflow-hidden w-[20%] bg-white pt-4 px-4 mb-3 h-[770px] text-left">
+    <section className="w-full flex m-1 items-center lg:items-start">
+      <div className="lg:flex flex-col hidden overflow-hidden w-[20%] bg-white pt-4 px-4 mb-3 h-[770px] text-left">
         <Sidebar />
       </div>
 

@@ -5,7 +5,7 @@ import { Image } from "@heroui/react";
 
 export default function SearchInput(props) {
   return (
-    <div className="w-[280px] h-7 lg:items-start items-end lg:h-[40px] lg:w-[663px]">
+    <div className="w-[230px] h-7 lg:items-start items-end lg:h-[40px] lg:w-[663px]">
       <Input
         placeholder={props.placeholder}
         type="text"

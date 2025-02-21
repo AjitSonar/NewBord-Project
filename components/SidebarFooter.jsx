@@ -5,29 +5,29 @@ import CardModule from "./CardModule";
 
 export default function SidebarFooter() {
   return (
-    <div className="absolute bottom-1 left-0">
+    <div className="absolute w-[282px] h-[155px]  bottom-3 left-0">
       {/* Free Trial Card */}
 
       <FreeTrialCard
         src="/assets/clock3.png"
-        width={12}
-        height={12}
-        class="ml-1 -mt-1"
+        width="16px"
+        height="16px"
+        class="ml-1 -mt-0.5"
         text="Free trials ends in 7 days!"
-        textClass="text-[10px] mt-1 ml-2"
+        textClass="text-[14px] mt-1 ml-2"
       />
 
       {/* Chrome Extension Card  */}
 
       <CardModule
         src="/assets/chrome3.png"
-        width={25}
-        height={25}
-        class=""
+        width="28px"
+        height="28px"
+        class="-mt-2"
         text="Install from"
-        textClass="text-[10px] text-black"
+        textClass="text-[12px] text-black"
         boldText="Chrome Extension Store"
-        boldTextClass="text-[10px] font-bold"
+        boldTextClass="text-[14px] font-bold"
       />
     </div>
   );

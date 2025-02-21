@@ -9,7 +9,7 @@ export default function LayoutButton(props) {
       <Button
         isIconOnly
         variant="bordered"
-        className="bg-white border-small w-4 h-7"
+        className="bg-white border-small w-[36px] h-[36px]"
         size="sm"
         aria-label="Like"
         color="default"

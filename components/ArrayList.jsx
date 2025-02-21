@@ -241,7 +241,7 @@ export const menuItems = [
   },
   {
     key: 2,
-    src:"/assets/settings3.png",
+    src: "/assets/settings3.png",
     title: "Settings",
   },
   {
@@ -269,4 +269,4 @@ export const menuItems = [
     src: "/assets/folder.r3.png",
     title: "Folder",
   },
-  ];
+];

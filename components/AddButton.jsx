@@ -19,7 +19,7 @@ export default function AddButton(props) {
           />
         }
       >
-        <p className="ml-1 text-sm text-neutral-500 font-medium">
+        <p className="ml-1 text-[14px] text-neutral-500 font-medium">
           {props.content}
         </p>
       </Button>

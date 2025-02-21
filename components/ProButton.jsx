@@ -4,7 +4,7 @@ import { Button } from "@heroui/react";
 
 export default function ProButton(props) {
   return (
-    <div className="">
+    <div className="mt-2 ml-0.5">
       <Button
         className={props.className}
         radius="sm"
@@ -12,7 +12,7 @@ export default function ProButton(props) {
         variant="solid"
         size="sm"
       >
-        {props.content}
+        <p className={props.contentClass}> {props.content}</p>
       </Button>
     </div>
   );

@@ -9,23 +9,23 @@ import { cardData } from "./ArrayList";
 export default function BoardCardLists() {
   return (
     <div className="flex px-2 flex-wrap">
-      <div className="flex w-full justify-center lg:justify-start flex-wrap">
+      <div className="flex w-full justify-evenly lg:justify-start flex-wrap">
         {cardData.map((card, index) => (
           <Card
             key={index}
-            className="shadow-none border-1 lg:w-1/3 max-w-[320px] m-1 flex-col"
+            className="shadow-none border-1  w-[430px] h-[447px] m-1 flex-col"
           >
             <CardHeader className="flex flex-col items-start">
               <div className="flex">
                 <Image
                   alt="heroui logo"
-                  width={25}
-                  height={25}
+                  width="29px"
+                  height="29px"
                   radius="sm"
                   src={card.emoji}
                 />
                 <div className="flex ml-1 mb-1 flex-col">
-                  <p className="text-medium font-bold">{card.title}</p>
+                  <p className="text-[21px] font-bold">{card.title}</p>
                 </div>
               </div>
 
@@ -44,35 +44,36 @@ export default function BoardCardLists() {
                     <div>
                       <Image
                         alt="heroui logo"
-                        height={25}
+                        height="29px"
                         radius="sm"
                         src={link.icon}
-                        width={25}
+                        width="29px"
+                        className="mt-1"
                       />
                     </div>
                     <div className="flex flex-col">
-                      <p className="text-[10px] font-bold ">{link.name}</p>
-                      <p className="text-[9px] text-default-500">{link.url}</p>
+                      <p className="text-[14px] font-bold ">{link.name}</p>
+                      <p className="text-[12px] text-default-500">{link.url}</p>
                     </div>
                     {link.hasImg && (
-                      <div className="bg-sky-100 mt-1 ml-12 rounded-full w-6 h-6">
+                      <div className="bg-sky-100 mt-1 ml-20 rounded-full w-[25px] h-[25px]">
                         <Image
-                          className="mt-1 ml-1"
+                          className="mt-1.5 ml-1.5"
                           alt="heroui logo"
-                          width={15}
-                          height={15}
+                          width="14px"
+                          height="14px"
                           radius="sm"
                           src={link.img}
                         />
                       </div>
                     )}
                     {link.itHasImg && (
-                      <div className="bg-purple-100 mt-1 ml-12 rounded-full w-6 h-6">
+                      <div className="bg-purple-100 mt-1 ml-20 rounded-full w-[25px] h-[25px]">
                         <Image
-                          className="mt-1 ml-1"
+                          className="mt-1.5 ml-1.5"
                           alt="heroui logo"
-                          width={15}
-                          height={15}
+                          width="14px"
+                          height="14px"
                           radius="sm"
                           src={link.img}
                         />

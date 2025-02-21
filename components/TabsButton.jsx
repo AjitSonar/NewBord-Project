@@ -8,7 +8,7 @@ export default function TabsButton(props) {
     <div className="">
       <Button
         isExternal
-        className="text-sm ml-1 border-small w-30 h-8 text-white"
+        className="text-sm ml-1 border-small w-[120px] h-[35px] text-white"
         startContent={
           <div className="">
             <Image
@@ -32,7 +32,7 @@ export default function TabsButton(props) {
         variant="bordered"
         color="default"
       >
-        <p className="text-black text-xs font-bold">11 tabs</p>
+        <p className="text-black text-[14px] font-bold">11 tabs</p>
       </Button>
     </div>
   );

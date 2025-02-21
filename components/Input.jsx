@@ -5,7 +5,7 @@ import { Image } from "@heroui/react";
 
 export default function SearchInput(props) {
   return (
-    <div className="w-2/3 lg:items-start items-end lg:w-[430px]">
+    <div className="w-[280px] h-7 lg:items-start items-end lg:h-[40px] lg:w-[663px]">
       <Input
         placeholder={props.placeholder}
         type="text"
@@ -21,7 +21,7 @@ export default function SearchInput(props) {
           />
         }
         endContent={
-          <div className="flex">
+          <div className="flex pr-3">
             <Image
               className="mt-1 rounded-none"
               alt="HeroUI hero Image"
@@ -29,7 +29,9 @@ export default function SearchInput(props) {
               width={props.endWidth}
               height={props.endHeight}
             />
-            <p className="mt-0.5 text-xs text-neutral-500 px-1">{props.endImgContent}</p>
+            <p className="-ml-0.5 w-[8px] h-[15px] text-neutral-500 px-1">
+              {props.endImgContent}
+            </p>
           </div>
         }
       />

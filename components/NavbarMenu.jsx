@@ -19,10 +19,10 @@ export default function NavbarMenu() {
   };
 
   return (
-    <div className="flex lg:flex justify-between bg-white h-10">
-      <div className="mt-1 flex">
+    <div className="flex justify-between bg-white h-10">
+      <div className="mt-1 w-full flex">
         <div className=" lg:hidden flex-col items-start">
-          <div className="gap-2">
+          <div className="gap-2 -mt-1">
             <Button
               onPress={handleClick}
               variant="light"
@@ -33,23 +33,23 @@ export default function NavbarMenu() {
             </Button>
           </div>
         </div>
-        <div className="items-start lg:hidden mr-4 w-15 h-15">
+        <div className=" lg:hidden mr-4 w-15 h-15">
           <Icon
             src="/assets/frame3.png"
-            class="ml-2 -mt-1 rounded-none"
-            width={35}
-            height={30}
+            class=" -mt-1 rounded-none"
+            width={30}
+            height={27}
           />
         </div>
         <div className="">
           <SearchInput
             placeholder="Search"
             startSrc="/assets/search-013.png"
-            startHeight={15}
-            startWidth={15}
+            startHeight="18px"
+            startWidth="18px"
             endSrc="/assets/command@3x.png"
-            endHeight={12}
-            endWidth={16}
+            endHeight="13px"
+            endWidth="13px"
             endImgContent="K"
           />
         </div>
@@ -58,49 +58,57 @@ export default function NavbarMenu() {
           <TabsButton
             startImg="/assets/change-3.png"
             endImg="/assets/downArray.svg"
-            startHeight={15}
-            startWidth={15}
-            endHeight={15}
-            endWidth={15}
+            startHeight={16}
+            startWidth={30}
+            endHeight={35}
+            endWidth={35}
           />
         </div>
       </div>
 
-      <div className="lg:flex hidden pr-4">
-        <div>
+      <div className="sm:flex hidden pr-5">
+        <div className="w-[100px] h-17 -mt-0.5">
           <AddButton
-            src="/assets/add-icon.webp"
-            width="17"
-            height="17"
+            src="/assets/add-icon3.png"
+            width={18}
+            height={18}
             content="New"
           />
         </div>
 
         <Divider orientation="vertical" className=" h-5 my-2" />
 
-        <OpenButton src="/assets/target-02-2@3x.png" width="17" height="17" />
+        <OpenButton
+          src="/assets/target-02-2@3x.png"
+          width="18px"
+          height="18px"
+        />
 
-        <OpenButton src="/assets/bubble-chat-23.png" width="18" height="18" />
+        <OpenButton
+          src="/assets/bubble-chat-23.png"
+          width="18px"
+          height="18px"
+        />
 
         <div className=" relative">
-          <div className="w-2 h-2 bg-red-400 absolute top-2 left-6 z-40 rounded-full"></div>
+          <div className="w-2 h-2 bg-red-400 absolute top-1.5 left-7 z-40 rounded-full"></div>
 
           <OpenButton
             src="/assets/notification-02@3x.png"
-            width="18"
-            height="18"
+            width="18px"
+            height="18px"
           />
         </div>
 
         <AvatarImage1 src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
       </div>
       {isOpen && (
-        <div className="lg:hidden bg-neutral-200 mt-12 h-auto w-full flex flex-col justify-center items-center absolute top-18 left-0 z-50">
+        <div className="md:hidden bg-neutral-200 border-b-2 mt-12 h-auto w-full flex flex-col justify-center items-center absolute top-18 left-0 z-50">
           <div>
             {menuItems.map((item) => (
               <div
                 key={item.key}
-                className="flex items-start m-1 mt-2 p-2 justify-start"
+                className="flex items-start m-1 mt-3 mb-3 justify-start"
               >
                 <Icon
                   src={item.src}

@@ -11,65 +11,65 @@ export default function SidebarHeader() {
         <Icon
           src="/assets/frame3.png"
           class="ml-2 rounded-none"
-          width={21}
-          height={19}
+          width="23px"
+          height="23px"
         />
       </div>
 
       {/* AH Component */}
-      <div className="relative">
+      <div className="relative  h-[43px]  w-[282px]">
         <FoldersSidebar
           startIconSrc="/assets/briefcase3.png"
-          StartIconWidth={18}
-          StartIconHeight={18}
+          StartIconWidth="24px"
+          StartIconHeight="21px"
           startIconClass="rounded-none mt-1"
           content="Atomic House"
-          contentClass="font-bold mt-2 text-xs"
+          contentClass="font-bold mt-2 text-[16px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}
           endIconClass=" "
         />
-        <div className="absolute top-0.5 left-[172px] rounded-full w-5 h-5">
+        <div className="absolute top-3 left-[210px] rounded-full w-5 h-5">
           <Icon
             src="/assets/arrow-down (3).png"
             class="ml-2 rounded-none"
-            width={16}
-            height={16}
+            width="20px"
+            height="20px"
           />
         </div>
       </div>
 
       {/* Inbox Component*/}
 
-      <div className="flex relative h-6 mt-1.5">
+      <div className="flex relative  h-[43px]  w-[282px] mt-3">
         <FoldersSidebar
           startIconSrc="/assets/inbox.svg"
-          StartIconWidth={19}
-          StartIconHeight={19}
+          StartIconWidth="21px"
+          StartIconHeight="21px"
           startIconClass="rounded-none -mt-3"
           content="Inbox"
-          contentClass="text-neutral-500 ml-0.5 -mt-0.5 text-xs"
+          contentClass="text-neutral-500 ml-0.5 -mt-1 text-[14px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}
           endIconClass=" "
         />
-        <div className="bg-slate-200 absolute top-0.5 left-44 rounded-full w-5 h-5">
-          <p className="ml-1.5 text-xs mt-0.5">6</p>
+        <div className="bg-slate-200 absolute top-2.5 left-[215px] rounded-full w-[25px] h-[21px]">
+          <p className="ml-2 text-xs mt-0.5">6</p>
         </div>
       </div>
 
       {/* Settings Component  */}
 
-      <div className="flex h-6  mb-3 mt-1.5">
+      <div className="flex h-[43px]  w-[282px] mb-1 ">
         <FoldersSidebar
           startIconSrc="/assets/settings3.png"
-          StartIconWidth={19}
-          StartIconHeight={19}
+          StartIconWidth="21px"
+          StartIconHeight="21px"
           startIconClass="rounded-none -mt-3"
           content="Settings"
-          contentClass="text-neutral-500 -mt-0.5 text-xs"
+          contentClass="text-neutral-500 -mt-1 text-[14px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}
@@ -81,14 +81,14 @@ export default function SidebarHeader() {
 
       {/* Brand Component  */}
 
-      <div className="flex h-6 mt-4">
+      <div className="flex h-[43px]  w-[282px] mt-2">
         <FoldersSidebar
           startIconSrc="/assets/dashboard3.png"
-          StartIconWidth={18}
-          StartIconHeight={18}
+          StartIconWidth="21px"
+          StartIconHeight="21px"
           startIconClass="rounded-none -mt-3"
           content="All Brands"
-          contentClass="text-neutral-500 -mt-0.5 text-xs"
+          contentClass="text-neutral-500 -mt-1 text-[14px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}
@@ -98,36 +98,36 @@ export default function SidebarHeader() {
 
       {/* WebDesign Component */}
 
-      <div className="flex bg-slate-100 h-9 rounded-lg -ml-3">
+      <div className="flex bg-slate-100 h-[43px]  w-[282px] rounded-xl -ml-3">
         <div className="py-0.5 flex relative items-center justify-center">
           <FoldersSidebar
             startIconSrc="/assets/anger-symbol3.png"
-            StartIconWidth={19}
-            StartIconHeight={19}
-            startIconClass="ml-3 rounded-none"
+            StartIconWidth="21px"
+            StartIconHeight="21px"
+            startIconClass="ml-3 -mt-1.5 rounded-none"
             content="Website Design"
-            contentClass="font-bold py-3 ml-2.5 -mt-0.5 text-xs"
+            contentClass="font-bold py-3 ml-2.5 -mt-2.5 text-[14px]"
             endIconSrc=" "
             endIconWidth={0}
             endIconHeight={0}
             endIconClass=" "
           />
-          <div className="bg-slate-200 absolute top-1.5 left-[185px] rounded-full w-6 h-6">
-            <p className="ml-1 text-xs mt-1">24</p>
+          <div className="bg-slate-200 absolute top-2.5 left-[225px]  rounded-full w-[25px] h-[21px]">
+            <p className="ml-1.5 text-xs mt-1">24</p>
           </div>
         </div>
       </div>
 
       {/* Mobile Design Component */}
 
-      <div className="flex h-6 mt-2">
+      <div className="flex  h-[43px]  w-[282px] mt-1">
         <FoldersSidebar
           startIconSrc="/assets/mobile3.png"
-          StartIconWidth={19}
-          StartIconHeight={19}
+          StartIconWidth="21px"
+          StartIconHeight="21px"
           startIconClass="rounded-none -mt-3"
           content="Mobile Design"
-          contentClass="text-neutral-500 -mt-0.5 text-xs"
+          contentClass="text-neutral-500 -mt-1 text-[14px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}
@@ -137,34 +137,34 @@ export default function SidebarHeader() {
 
       {/* Yellow Folder Component */}
 
-      <div className="flex relative h-6 mt-1.5">
+      <div className="flex relative h-[43px]  w-[282px] mt-1">
         <FoldersSidebar
           startIconSrc="/assets/folder.y3.png"
-          StartIconWidth={19}
-          StartIconHeight={19}
-          startIconClass="rounded-none -mt-3"
+          StartIconWidth="23px"
+          StartIconHeight="23px"
+          startIconClass="rounded-none -mt-2"
           content="Folder"
-          contentClass="text-neutral-500 -mt-0.5  text-xs"
+          contentClass="text-neutral-500 -mt-1 text-[14px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}
           endIconClass=" "
         />
-        <div className="bg-slate-200 absolute top-0.5 left-44 rounded-full w-5 h-5">
-          <p className="ml-1.5 text-xs mt-0.5">3</p>
+        <div className="bg-slate-200 absolute top-3 left-[215px] rounded-full w-[25px] h-[21px]">
+          <p className="ml-2 text-xs mt-0.5">3</p>
         </div>
       </div>
 
       {/* Red Folder Component  */}
 
-      <div className="flex h-6 mt-2">
+      <div className="flex  h-[43px]  w-[282px] mt-1">
         <FoldersSidebar
           startIconSrc="/assets/folder.r3.png"
-          StartIconWidth={19}
-          StartIconHeight={19}
+          StartIconWidth="23px"
+          StartIconHeight="23px"
           startIconClass="rounded-none -mt-3"
           content="Folder"
-          contentClass="text-neutral-500 -mt-0.5 text-xs"
+          contentClass="text-neutral-500 -mt-1 text-[14px]"
           endIconSrc=" "
           endIconWidth={0}
           endIconHeight={0}

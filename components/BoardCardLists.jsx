@@ -13,7 +13,7 @@ export default function BoardCardLists() {
         {cardData.map((card, index) => (
           <Card
             key={index}
-            className="shadow-none border-1  w-[430px] h-[447px] m-1 flex-col"
+            className="shadow-none border-1  w-[400px] h-[447px] m-1 flex-col"
           >
             <CardHeader className="flex flex-col items-start">
               <div className="flex">

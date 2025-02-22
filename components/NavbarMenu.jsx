@@ -103,12 +103,12 @@ export default function NavbarMenu() {
         <AvatarImage1 src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
       </div>
       {isOpen && (
-        <div className="md:hidden bg-neutral-200 border-b-2 mt-12 h-auto w-full flex flex-col justify-center items-center absolute top-18 left-0 z-50">
+        <div className="lg:hidden bg-neutral-200 border-b-2 mt-12 h-auto w-full flex flex-col items-start absolute top-18 left-0 z-50">
           <div>
             {menuItems.map((item) => (
               <div
                 key={item.key}
-                className="flex items-start m-1 mt-3 mb-3 justify-start"
+                className="flex items-start m-1 ml-8 mt-3 mb-3 justify-start"
               >
                 <Icon
                   src={item.src}

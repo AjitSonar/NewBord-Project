@@ -20,7 +20,7 @@ export default function NavbarMenu() {
 
   return (
     <div className="flex justify-between bg-white h-10">
-      <div className="mt-1 w-full flex">
+      <div className="mt-1 w-full flex flex-1">
         <div className=" lg:hidden flex-col items-start">
           <div className="gap-2 -mt-1">
             <Button
@@ -41,7 +41,7 @@ export default function NavbarMenu() {
             height={27}
           />
         </div>
-        <div className="">
+        <div className="flex-grow flex">
           <SearchInput
             placeholder="Search"
             startSrc="/assets/search-013.png"
@@ -52,17 +52,16 @@ export default function NavbarMenu() {
             endWidth="13px"
             endImgContent="K"
           />
-        </div>
-
-        <div className="hidden lg:block">
-          <TabsButton
-            startImg="/assets/change-3.png"
-            endImg="/assets/downArray.svg"
-            startHeight={16}
-            startWidth={30}
-            endHeight={35}
-            endWidth={35}
-          />
+          <div className="hidden  lg:block">
+            <TabsButton
+              startImg="/assets/change-3.png"
+              endImg="/assets/downArray.svg"
+              startHeight={16}
+              startWidth={30}
+              endHeight={35}
+              endWidth={35}
+            />
+          </div>
         </div>
       </div>
 

@@ -4,8 +4,8 @@ import Icon from "./Icon.jsx";
 
 export default function FoldersSidebar(props) {
   return (
-    <div className="flex h-10 mt-3 ">
-      <div className="w-7 h-7 items-center justify-center">
+    <div className="flex items-start py-2 justify-start rounded-lg cursor-pointer hover:bg-gray-300">
+      <div className="w-7 h-7 items-center justify-center ">
         <Icon
           src={props.startIconSrc}
           width={props.StartIconWidth}
@@ -14,12 +14,6 @@ export default function FoldersSidebar(props) {
         />
       </div>
       <h1 className={props.contentClass}>{props.content}</h1>
-      <Icon
-        src={props.endIconSrc}
-        width={props.endIconWidth}
-        height={props.endIconHeight}
-        class={props.endIconClass}
-      />
     </div>
   );
 }

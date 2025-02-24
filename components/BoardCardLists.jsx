@@ -5,6 +5,7 @@ import { Card, CardHeader } from "@heroui/card";
 import Open7tabButton from "./Open7tabButton";
 import AddDescButton from "./AddDescButton";
 import { cardData } from "./ArrayList";
+import CardListLink from "./CardListLink";
 
 export default function BoardCardLists() {
   return (
@@ -13,7 +14,7 @@ export default function BoardCardLists() {
         {cardData.map((card, index) => (
           <Card
             key={index}
-            className="shadow-none border-1  w-[400px] h-[447px] m-1 flex-col"
+            className="shadow-none border-1  w-[400px] h-auto m-1 flex-col"
           >
             <CardHeader className="flex flex-col items-start">
               <div className="flex">
@@ -41,22 +42,13 @@ export default function BoardCardLists() {
                     key={idx}
                     className="flex text-left justify-start gap-2 mt-2"
                   >
-                    <div>
-                      <Image
-                        alt="heroui logo"
-                        height="29px"
-                        radius="sm"
-                        src={link.icon}
-                        width="29px"
-                        className="mt-1"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="text-[14px] font-bold ">{link.name}</p>
-                      <p className="text-[12px] text-default-500">{link.url}</p>
-                    </div>
+                    <CardListLink
+                      src={link.icon}
+                      name={link.name}
+                      url={link.url}
+                    />
                     {link.hasImg && (
-                      <div className="bg-sky-100 mt-1 ml-20 rounded-full w-[25px] h-[25px]">
+                      <div className="bg-sky-100 mt-3 ml-20 rounded-full w-[25px] h-[25px]">
                         <Image
                           className="mt-1.5 ml-1.5"
                           alt="heroui logo"
@@ -68,7 +60,7 @@ export default function BoardCardLists() {
                       </div>
                     )}
                     {link.itHasImg && (
-                      <div className="bg-purple-100 mt-1 ml-20 rounded-full w-[25px] h-[25px]">
+                      <div className="bg-purple-100 mt-3 ml-20 rounded-full w-[25px] h-[25px]">
                         <Image
                           className="mt-1.5 ml-1.5"
                           alt="heroui logo"

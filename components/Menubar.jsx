@@ -9,7 +9,7 @@ export default function Menubar() {
     <div className="flex flex-col h-screen">
       <NavbarMenu />
 
-      <div className="bg-slate-50 justify-center border-1 lg:overflow-hidden overflow-y-auto h-screen mt-2 rounded-3xl">
+      <div className="bg-slate-50 justify-center border-1 scrollbar-hide overflow-y-auto h-screen mt-2 rounded-3xl">
         <BoardNavbar />
 
         <BoardCardLists />

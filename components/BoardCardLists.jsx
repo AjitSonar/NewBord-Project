@@ -8,7 +8,7 @@ import { cardData } from "./ArrayList";
 
 export default function BoardCardLists() {
   return (
-    <div className="flex px-2 flex-wrap">
+    <div className="flex px-2 flex-wrap ">
       <div className="flex w-full justify-evenly lg:justify-start flex-wrap">
         {cardData.map((card, index) => (
           <Card

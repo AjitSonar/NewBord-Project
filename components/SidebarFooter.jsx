@@ -5,7 +5,7 @@ import CardModule from "./CardModule";
 
 export default function SidebarFooter() {
   return (
-    <div className="absolute w-[282px] h-[155px] justify-end flex-col bottom-3 left-0">
+    <div className=" w-full h-[155px] flex-col">
       {/* Free Trial Card */}
 
       <FreeTrialCard

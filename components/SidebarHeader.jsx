@@ -17,7 +17,7 @@ export default function SidebarHeader() {
       </div>
 
       {/* AH Component */}
-      <div className="relative  h-[43px]  w-[282px]">
+      <div className="relative  h-[43px]  w-full">
         <FoldersSidebar
           startIconSrc="/assets/briefcase3.png"
           StartIconWidth="24px"
@@ -42,7 +42,7 @@ export default function SidebarHeader() {
 
       {/* Inbox Component*/}
 
-      <div className="flex relative  h-[43px]  w-[282px] mt-3">
+      <div className="flex relative  h-[43px]  w-full mt-3">
         <FoldersSidebar
           startIconSrc="/assets/inbox.svg"
           StartIconWidth="21px"
@@ -62,7 +62,7 @@ export default function SidebarHeader() {
 
       {/* Settings Component  */}
 
-      <div className="flex h-[43px]  w-[282px] mb-1 ">
+      <div className="flex h-[43px]  w-full mb-1 ">
         <FoldersSidebar
           startIconSrc="/assets/settings3.png"
           StartIconWidth="21px"
@@ -77,11 +77,11 @@ export default function SidebarHeader() {
         />
       </div>
 
-      <Divider />
+      <Divider className="w-[282px]" />
 
       {/* Brand Component  */}
 
-      <div className="flex h-[43px]  w-[282px] mt-2">
+      <div className="flex h-[43px]  w-full mt-2">
         <FoldersSidebar
           startIconSrc="/assets/dashboard3.png"
           StartIconWidth="21px"
@@ -120,7 +120,7 @@ export default function SidebarHeader() {
 
       {/* Mobile Design Component */}
 
-      <div className="flex  h-[43px]  w-[282px] mt-1">
+      <div className="flex  h-[43px]  w-full mt-1">
         <FoldersSidebar
           startIconSrc="/assets/mobile3.png"
           StartIconWidth="21px"
@@ -137,7 +137,7 @@ export default function SidebarHeader() {
 
       {/* Yellow Folder Component */}
 
-      <div className="flex relative h-[43px]  w-[282px] mt-1">
+      <div className="flex relative h-[43px]  w-full mt-1">
         <FoldersSidebar
           startIconSrc="/assets/folder.y3.png"
           StartIconWidth="23px"
@@ -157,7 +157,7 @@ export default function SidebarHeader() {
 
       {/* Red Folder Component  */}
 
-      <div className="flex  h-[43px]  w-[282px] mt-1">
+      <div className="flex  h-[43px]  w-full mt-1">
         <FoldersSidebar
           startIconSrc="/assets/folder.r3.png"
           StartIconWidth="23px"

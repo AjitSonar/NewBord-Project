@@ -2,10 +2,10 @@
 
 import { Image } from "@heroui/react";
 import { Card, CardHeader } from "@heroui/card";
-import Open7tabButton from "./Open7tabButton";
-import AddDescButton from "./AddDescButton";
-import { cardData } from "./ArrayList";
-import CardListLink from "./CardListLink";
+import Open7tabButton from "../ReusableComponents/Open7tabButton";
+import AddDescButton from "../ReusableComponents/AddDescButton";
+import { cardData } from "../ReusableComponents/ArrayList";
+import CardListLink from "../ReusableComponents/CardListLink";
 
 export default function BoardCardLists() {
   return (

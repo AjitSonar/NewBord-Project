@@ -1,9 +1,9 @@
 "use client";
 
 import { Divider } from "@heroui/react";
-import Icon from "./Icon";
-import LayoutButton from "./LayoutButton";
-import ShareButton from "./ShareButton";
+import Icon from "../ReusableComponents/Icon";
+import LayoutButton from "../ReusableComponents/LayoutButton";
+import ShareButton from "../ReusableComponents/ShareButton";
 
 export default function BoardNavbar() {
   return (

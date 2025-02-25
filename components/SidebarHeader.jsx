@@ -1,8 +1,8 @@
 "use client";
 
-import Icon from "./Icon.jsx";
-import FoldersSidebar from "./FoldersSidebar.jsx";
-import { menuItems } from "./ArrayList.jsx";
+import Icon from "@/ReusableComponents/Icon";
+import FoldersSidebar from "@/ReusableComponents/FoldersSidebar";
+import { menuItems } from "@/ReusableComponents/ArrayList";
 
 export default function SidebarHeader() {
   return (

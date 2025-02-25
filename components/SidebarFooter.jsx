@@ -1,7 +1,7 @@
 "use client";
 
-import FreeTrialCard from "./FreeTrialCard";
-import CardModule from "./CardModule";
+import FreeTrialCard from "@/ReusableComponents/FreeTrialCard";
+import CardModule from "@/ReusableComponents/CardModule";
 
 export default function SidebarFooter() {
   return (

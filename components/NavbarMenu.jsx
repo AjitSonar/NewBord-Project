@@ -1,15 +1,15 @@
 "use client";
 
 import { Button, Divider } from "@heroui/react";
-import SearchInput from "./Input";
-import TabsButton from "./TabsButton";
-import AddButton from "./AddButton";
-import AvatarImage1 from "./AvatarImage1";
-import OpenButton from "./OpenButton";
-import Icon from "./Icon";
+import SearchInput from "../ReusableComponents/Input";
+import TabsButton from "../ReusableComponents/TabsButton";
+import AddButton from "../ReusableComponents/AddButton";
+import AvatarImage1 from "../ReusableComponents/AvatarImage1";
+import OpenButton from "../ReusableComponents/OpenButton";
+import Icon from "../ReusableComponents/Icon";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { menuItems } from "./ArrayList";
+import { menuItems } from "../ReusableComponents/ArrayList";
 
 export default function NavbarMenu() {
   const [isOpen, setIsOpen] = useState(false);

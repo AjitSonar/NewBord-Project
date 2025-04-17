@@ -1,7 +1,7 @@
 "use client";
 
 import { Image } from "@heroui/react";
-import { Card, CardHeader } from "@heroui/card";
+import { Card, CardHeader } from "@heroui/react";
 import Open7tabButton from "../ReusableComponents/Open7tabButton";
 import AddDescButton from "../ReusableComponents/AddDescButton";
 import { cardData } from "../ReusableComponents/ArrayList";

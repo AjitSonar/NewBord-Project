@@ -1,7 +1,7 @@
 "use client";
 
 import Icon from "./Icon.jsx";
-import { Card, CardHeader } from "@heroui/card";
+import { Card, CardHeader } from "@heroui/react";
 
 export default function CardModule(props) {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button as Button1 } from '@heroui/react'; // Adjust the import based on your library structure
 
 import './button.css';
 
@@ -25,17 +26,14 @@ export const Button = ({
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
+    <Button1
       type="button"
+      style={{ backgroundColor }}
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       {...props}
     >
       {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
-    </button>
+    
+    </Button1>
   );
 };

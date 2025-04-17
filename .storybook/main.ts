@@ -11,6 +11,7 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "storybook-zeplin/register",
+    "@storybook/addon-styling-webpack"
   ],
   framework: {
     name: "@storybook/nextjs",
